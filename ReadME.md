@@ -35,10 +35,10 @@ npm install express
 npm install mongoose
 npm install jsonwebtoken
 ```
-**Bcrypt** est une librairie permettant de **hash** les mots de passes
-**Express** est une librairie permettant d'utiliser des fonctionnalités simplifiés de node.js
-**Mongoose** est une librairie permettant d'utiliser la base de donnée MongoDB
-**JsonWebToken** est une librairie permettant de génerer des Tokens
+**Bcrypt** est une librairie permettant de **hash** les mots de passes  
+**Express** est une librairie permettant d'utiliser des fonctionnalités simplifiés de node.js  
+**Mongoose** est une librairie permettant d'utiliser la base de donnée MongoDB  
+**JsonWebToken** est une librairie permettant de génerer des Tokens  
 
 # II Exercice
 ## 1. Initialisation
