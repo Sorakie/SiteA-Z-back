@@ -124,17 +124,19 @@ Par exemple,
 ```js
 MaSuperFonction(valeur => {
 	if (valeur === 10)
-		return 5 / 0
+		return new Error("Erreur !")
 	if (valeur < 0)
 		return "négatif"
 	else
 		return "positif"
 })
+
+MaSuperFonction(-5)
 .then(resultat => {
 	console.log(resultat) // Affichera négatif si valeur est inférieur à 0, sinon, positif
 })
 .catch(err => {
-	console.log(err) // Affichera "cannot divide by 0" si valeur est égal à 10 (cela va provoquer une erreur)
+	console.log(err) // Affichera "Erreur !" si valeur est égal à 10 (cela va provoquer une erreur)
 })
 ```
 Vous allez donc, **après** avoir encoder votre mot de passe,  
