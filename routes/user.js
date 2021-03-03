@@ -5,9 +5,10 @@ const auth = require('../middleware/auth')
 
 router.post('/signup', userController.signup);
 router.post('/login', userController.login);
-router.post('/update', auth, userController.update)
 
-router.get('/me/:id', userController.me);
-router.get('/authme', auth, userController.authme);
+router.post('/delete', auth, userController.delete)
+router.post('/update', auth, userController.update)
+router.get('/list', userController.list);
+router.get('/me', auth, userController.authme);
 
 module.exports = router;

@@ -76,3 +76,14 @@ exports.update = async (req, res, next) => {
         res.status(201).json({msg: "ok"})
     }).catch(err => res.status(400).json({err}))
 }
+
+exports.delete = async(req, res, next) => {
+    User.deleteOne({_id: res.locals.user})
+    .then(res.status(201).json("deleted"))
+    .catch(res.status(400).json({err: "not found"}))
+}
+
+exports.list = async(req, res, next) => {
+    const data = await User.find({})
+    return res.status(200).json({data})
+}
